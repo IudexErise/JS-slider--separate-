@@ -1,0 +1,133 @@
+body {
+    background: black;
+}
+
+.completed-projects {
+    margin-left: 134px;
+    margin-top: 107px;
+    display: grid;
+    grid-template-columns: 492px auto;
+    grid-template-rows: auto auto;
+}
+
+.headline-three {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.headline-three_text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;    
+    color: #FFFFFF;
+}
+
+.completed-projects_details {
+    display: grid;
+    grid-template-columns: 190px 482px;
+    grid-template-rows: 70px auto;
+}
+
+.completed-projects_details_headline {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 34px;
+    margin-bottom: 9px;
+}
+
+.completed-projects_details_text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.completed-projects_links_text {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.completed-projects_links_text:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+    margin-top: 85px;
+    width: 162px;
+}
+
+.slider__dots  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.slider__dots .slider__dots-item {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background:rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.slider__dots-item:hover, .slider__dots-item.active {
+    background: rgba(255, 255, 255);
+}
+
+.slider__arrow {
+    cursor: pointer;
+}
+
+.slider__arrow.left {
+    position: absolute;
+    left: 0;
+}
+
+.slider__arrow.right {
+    position: absolute;
+    right: 0;
+}
+
+.slider__images {
+    width: 679px;
+    height: 482px;
+    position: relative;
+}
+
+.slider__images .image.active {
+    opacity: 1;
+}
+
+.slider__images .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-position: center center;
+    object-fit: cover;
+}

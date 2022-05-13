@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Slider</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="completed-projects">
+            <div></div> 
+            <div class="completed-projects_links">
+                <a class="completed-projects_links_text">Rostov-on-Don, Admiral</a>
+                <a class="completed-projects_links_text">Sochi Thieves</a>
+                <a class="completed-projects_links_text">Rostov-on-Don Patriotic</a>
+            </div>
+            <div>
+                <h2 class="headline-three">Completed <br> projects</h2>
+                <p class="headline-three_text">Only a small part of the work performed by our company is presented <br>
+                    on the site. For 14 years on in the construction <br>
+                    market we have made happy more than 1000 families</p>
+                <div class="completed-projects_details">
+                    <h3 class="completed-projects_details_headline">City:</h3>
+                    <h3 class="completed-projects_details_headline">Apartment area:</h3>
+                    <span class="completed-projects_details_text" id="location">Rostov-on-Don <br> LCD admiral</span>
+                    <span class="completed-projects_details_text" id="area">81m2</span>
+                </div>
+                <div class="completed-projects_details">
+                    <h3 class="completed-projects_details_headline">Repair time:</h3>
+                    <h3 class="completed-projects_details_headline">Repair cost:</h3>
+                    <span class="completed-projects_details_text" id="time">3.5 months</span>
+                    <span class="completed-projects_details_text">Upon request</span>
+                </div>
+                <div class="slider">
+                    <div class="slider__arrows">
+                        <div class="slider__arrow left"><img src="./images/slider-arrow_left.svg"></div>
+                        <div class="slider__dots"></div>
+                        <div class="slider__arrow right"><img src="./images/slider-arrow_right.svg"></div>
+                      </div>                    
+                </div>
+            </div>
+            <div>
+                <div class="slider_images"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
