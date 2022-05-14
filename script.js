@@ -29,7 +29,6 @@ function initSlider() {
     initImages();
     initArrows();
     initDots(); 
-    initDetails();  
     initLinks();  
   
     function initImages() {
@@ -80,7 +79,7 @@ function initSlider() {
 
     function initLinks() {
       images.forEach((image, index) => {
-          let linkDiv = `<div class="slider_links-item n${index} ${index === 0 ? "active" : ""}" data-index="${index}">${image.title}</div>`;
+          let linkDiv = `<div class="slider_links-item n${index} ${index === 0 ? "active" : ""}" data-index="${index}">${image.link}</div>`;
           sliderLinks.innerHTML += linkDiv;
       });
       sliderLinks.querySelectorAll(".slider_links-item").forEach(links => {
