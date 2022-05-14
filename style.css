@@ -57,7 +57,11 @@ body {
     color: #FFFFFF;
 }
 
-.completed-projects_links_text {
+.slider_links {
+    display: flex;
+}
+
+.slider_links-item {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -69,59 +73,71 @@ body {
     cursor: pointer;
 }
 
-.completed-projects_links_text:hover {
+.slider_links-item:hover, .slider_links-item.active {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #E3B873;
+    text-underline-offset: 7px;
 }
 
 .slider {
-    position: relative;
-    margin-top: 85px;
     width: 162px;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
-.slider__dots  {
+.slider_dots  {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    left: 71px;
+    position: absolute;
 }
 
-.slider__dots .slider__dots-item {
+.slider_dots .slider_dots-item {
     cursor: pointer;
     width: 10px;
     height: 10px;
     background:rgba(255, 255, 255, 0.3);
     border-radius: 50%;
+    margin-right: 17px;
 }
 
-.slider__dots-item:hover, .slider__dots-item.active {
+.slider_dots-item:hover, .slider_dots-item.active {
     background: rgba(255, 255, 255);
 }
 
-.slider__arrow {
+.slider_arrows {
+    display: flex;
+}
+
+.slider_arrow {
     cursor: pointer;
 }
 
-.slider__arrow.left {
+.slider_arrow.left {
     position: absolute;
     left: 0;
 }
 
-.slider__arrow.right {
+.slider_arrow.right {
     position: absolute;
-    right: 0;
+    left: 162px;
 }
 
-.slider__images {
+.slider_images {
     width: 679px;
     height: 482px;
     position: relative;
+    margin-top: 23px;
 }
 
-.slider__images .image.active {
+.slider_images .image.active {
     opacity: 1;
 }
 
-.slider__images .image {
+.slider_images .image {
     width: 100%;
     height: 100%;
     position: absolute;
